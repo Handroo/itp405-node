@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dvds</title>
+</head>
+<body>
+	<p><%= dvds.length %> dvds found.</p>
+	<ul>
+		<% dvds.forEach(function(dvd){ %>
+			<li><%= dvd.title %> (<%= dvd.award %>)</li>
+		<% }); %>
+	</ul>	
+</body>
+</html>
